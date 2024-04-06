@@ -43,6 +43,8 @@ export class TitleSectionComponent {
 
   animateImage() {
     this.renderer.addClass(this.el.nativeElement.querySelector('img'), 'clicked');
+    this.renderer.addClass(this.el.nativeElement.querySelector('h2'), 'ani');
+    this.renderer.addClass(this.el.nativeElement.querySelector('h4'), 'ani');
     this.animationTriggered = true;
   }
   

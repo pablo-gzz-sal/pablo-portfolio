@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Router, NavigationExtras } from '@angular/router';
 
 @Component({
@@ -9,10 +9,14 @@ import { Router, NavigationExtras } from '@angular/router';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+
+  @Input()
+  contactPage?: boolean;
+
   menuItems = [
     { name: 'Projects', id: 'projects' },
     { name: 'Skills', id: 'skills' },
-    { name: 'Experience', id: 'experience' },
+    { name: 'About', id: 'about' },
     { name: 'Contact', id: 'contact' },
   ];
 
@@ -25,6 +29,11 @@ export class HeaderComponent {
     } else {
       console.error(`Element with ID '${sectionId}' not found.`);
     }
+  }
+
+  navigateToPage(url: string) {
+    this.router.navigateByUrl(url)
+    // this.scrollToSection(this.menuItems.id)
   }
 
 }

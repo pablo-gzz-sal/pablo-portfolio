@@ -1,13 +1,17 @@
 <section class="flex flex-col w-full">
-    <div class="flex flex-row justify-around flex-wrap w-">
-        @for(skill of skills; track skill){
-            <div class="h-[300px] w-3/12 mx-5 my-5 bg-[#1d1c20] text-bone rounded-[65px] card relative border-2"  [ngStyle]="{ 'border-color': skill.color }">
-                <span class=" flex flex-col pl-12 mt-12 satoshi">
-                  <h4 class="">{{skill.label}}</h4>
-                  <h3 class="font-bold mb-2 text-2xl">{{skill.title}}</h3>
-                </span>
-                <img [src]="skill.logo" alt="" />
-              </div>
-        }
+  <app-title-section [title]="'Skills'" [subtitle]="'My favorite tools to work with'" [img]="'../../../assets/rainbow.svg'"></app-title-section>
+  <div class="flex flex-col md:flex-row justify-around flex-wrap w-">
+    @for(skill of skills; track skill){
+    <div
+      class="h-[300px] md:w-3/12 mx-5 my-5 bg-[#1d1c20] text-bone rounded-[65px] card relative border-2"
+      [ngStyle]="{ 'border-color': skill.color }"
+    >
+      <span class="flex flex-col pl-12 mt-12 satoshi">
+        <h4 class="">{{ skill.label }}</h4>
+        <h3 class="font-bold mb-2 text-2xl">{{ skill.title }}</h3>
+      </span>
+      <img [src]="skill.logo" alt="" />
     </div>
-  </section>
+    }
+  </div>
+</section>

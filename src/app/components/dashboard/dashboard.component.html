@@ -1,11 +1,12 @@
-   <section class="h-screen flex justify-center items-center relative">
+   <section class="h-screen flex justify-center items-center relative w-full md:w-auto">
     <app-header></app-header>
-    <h1 class="montserrat-bold text-bone text-8xl w-6/12">
+    <h1 class="montserrat-bold text-bone text-center md:text-start  text-6xl w-11/12 md:text-7xl lg:text-8xl md:w-6/12">
       Hi! I'm Pablo. A Software Developer
     </h1>
-    <span class="material-symbols-outlined absolute bottom-[10%] left-2/4 -translate-x-2/4 text-bone text-4xl"> expand_more </span>
+    <span class="material-symbols-outlined absolute bottom-[10%] left-2/4 -translate-x-2/4 text-bone text-4xl cursor-pointer" (click)="scrollToSection('projects')"> expand_more </span>
   </section>
   <app-projects id="projects"></app-projects>
   <app-skills id="skills"></app-skills>
   <app-about id="about"></app-about>
+  <app-contact id="contact"></app-contact>
   <app-footer id="footer"></app-footer>

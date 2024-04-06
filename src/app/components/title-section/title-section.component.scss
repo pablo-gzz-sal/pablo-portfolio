@@ -8,12 +8,12 @@
     transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     opacity: 1;
     transform-style: preserve-3d;
-    transition: transform 3s ease;
+    transition: transform 2.5s ease;
     
   }
 
   img.clicked {
-    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(360deg) skew(0deg, 0deg);
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(180deg) skew(0deg, 0deg);
   }
   
 
@@ -21,7 +21,7 @@
     z-index: 1;
     height: 243px;
     filter: none;
-    background-image: linear-gradient(transparent, #111114 50%);
+    background-image: linear-gradient(transparent, #0e0e11 50%);
     margin-left: auto;
     margin-right: auto;
     position: absolute;
@@ -46,6 +46,15 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    transform: translate3d(0px, -10px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    opacity: 1;
+    transform-style: preserve-3d;
+    transition: transform .5s ease;
+
+  }
+
+  h2.ani {
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   }
 
   h4 {
@@ -54,4 +63,12 @@
     margin-bottom: 0;
     font-size: 20px;
     font-weight: 500;
+    transform: translate3d(0px, -10px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    opacity: 1;
+    transform-style: preserve-3d;
+    transition: transform .5s ease;
+  }
+
+  h4.ani {
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   }

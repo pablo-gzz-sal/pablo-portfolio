@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TitleSectionComponent } from "../title-section/title-section.component";
 
 interface Skills {
   label: string;
@@ -9,11 +10,11 @@ interface Skills {
 }
 
 @Component({
-  selector: 'app-skills',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './skills.component.html',
-  styleUrl: './skills.component.scss',
+    selector: 'app-skills',
+    standalone: true,
+    templateUrl: './skills.component.html',
+    styleUrl: './skills.component.scss',
+    imports: [CommonModule, TitleSectionComponent]
 })
 export class SkillsComponent {
   skills: Skills[] = [

@@ -4,5 +4,5 @@ import { ContactComponent } from './components/contact/contact.component';
 
 export const routes: Routes = [
   { path: '', component: DashboardComponent },
-  { path: '', component: ContactComponent },
+  { path: 'contact', component: ContactComponent },
 ];

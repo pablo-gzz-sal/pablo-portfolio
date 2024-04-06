@@ -1,7 +1,8 @@
-<header class="fixed top-[2%] flex left-2/4 -translate-x-2/4 p-2 px-4 bg-transparent rounded-full z-50 ">
-    <ul class="flex flex-row justify-center text-white satoshi">
+<header class=" w-11/12 md:w-auto fixed top-[2%] flex left-2/4 -translate-x-2/4 p-2 px-2 bg-transparent rounded-full z-50 ">
+    <ul class="flex flex-row justify-center text-white satoshi font-medium">
         @for (item of menuItems; track item) {
-            <li class="mx-2 p-2 px-4 bg-transparent rounded-full cursor-pointer " (click)="scrollToSection(item.id)">{{item.name}}</li>
+            <!-- <li class="mx-2 pr-2.5 p-2 px-3 md:px-4 bg-transparent rounded-full cursor-pointer " (click)="item.id === 'contact' ? navigateToPage('contact') : !contactPage ? scrollToSection(item.id) : navigateToPage('')">{{item.name}}</li> -->
+            <li class="mx-2 pr-2.5 p-2 px-3 md:px-4 bg-transparent rounded-full cursor-pointer " (click)="scrollToSection(item.id)">{{item.name}}</li>
         } 
     </ul>
 </header>
